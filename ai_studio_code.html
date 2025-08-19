@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カンバンボード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>プロジェクト管理ボード</h1>
+        <div class="task-form">
+            <input type="text" id="new-task-input" placeholder="新しいタスクを入力...">
+            <button id="add-task-btn">タスク追加</button>
+        </div>
+        <div class="board">
+            <div class="lane" id="todo-lane">
+                <h2>TODO</h2>
+                <div class="tasks" data-lane-id="todo"></div>
+            </div>
+            <div class="lane" id="doing-lane">
+                <h2>進行中</h2>
+                <div class="tasks" data-lane-id="doing"></div>
+            </div>
+            <div class="lane" id="done-lane">
+                <h2>完了</h2>
+                <div class="tasks" data-lane-id="done"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
